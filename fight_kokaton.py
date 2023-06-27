@@ -108,6 +108,7 @@ class Bomb:
         引数 screen：画面Surface
         """
         yoko, tate = check_bound(self.rct)
+        
         if not yoko:
             self.vx *= -1
         if not tate:
@@ -118,7 +119,7 @@ class Bomb:
 
 class Beam:
     """
-    こうかとんビームに関するクラス
+    こうかとんのビームに関するクラス
     """
     def __init__(self, bird: Bird):
         """
