@@ -108,7 +108,7 @@ class Bomb:
         引数 screen：画面Surface
         """
         yoko, tate = check_bound(self.rct)
-        
+
         if not yoko:
             self.vx *= -1
         if not tate:
@@ -168,7 +168,7 @@ def main():
                 time.sleep(1)
                 return
         
-        for i, bomb in enumerate(bombs):
+        for i, bomb in enumerate(bombs): 
             if beam is not None:
                 if bomb.rct.colliderect(beam.rct):
                     bombs[i] = None
